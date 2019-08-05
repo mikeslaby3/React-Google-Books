@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Search from "./pages/Search/Search";
 import Saved from "./pages/Saved/Saved";
 import Nav from "./components/Nav/Nav";
+import Jumbotron from "./components/Jumbotron/Jumbotron";
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <Router>
       <div>
         <Nav/>
+        <Jumbotron/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/search" component={Search} />
