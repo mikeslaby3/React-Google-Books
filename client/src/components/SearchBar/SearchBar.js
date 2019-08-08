@@ -1,26 +1,9 @@
 import React, { Component } from 'react';
+import API from "../../utils/API";
 import "../../App.css";
 
 class SearchBar extends Component {
-    constructor(props) {
-        super(props)
-        
-        this.state = {
-            bookName: ''
-        }
 
-        this.handleChange = this.handleChange.bind(this);
-        this.handleOnClick = this.handleOnClick.bind(this);
-    }
-
-    handleChange = (event) => {
-        this.setState({bookName: event.target.value});
-    }
-
-    handleOnClick = (event) => {
-        alert(`A book name was entered: ${this.state.bookName}`);
-        event.preventDefault();
-    }
 
     render() {
         return (
